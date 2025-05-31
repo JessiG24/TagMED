@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@font-face {
+    font-family: 'Fuente 1';
+    src: url(fuentes/Quicksand-VariableFont_wght.ttf);
+}
+
+.bienvenido-tagmed {
+    font-family: 'Fuente 1', sans-serif;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: #333;
+    font-family: sans-serif;
+}
+
+
+header {
+    background-color: #2ECC71; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.button-menu{
+    display: flex;
+    gap: 6vh;
+    width: 25vh;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: 40px ;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+}
+
+.iniciar-sesion{
+    background-color: #2ECC71;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+.iniciar-sesion:hover {
+    background-color: rgb(198, 208, 209);
+}
+.registrarse{
+    background-color: #2ECC71;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.registrarse:hover {
+    background-color: rgb(198, 208, 209);
+}
+h4{
+    color: #2ECC71;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.buscador input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #2ECC71;
+    border-radius: 10px;
+}
+.buscador button{
+    padding: 10px 20px;
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+  #sinResultados {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    display: none;
+    color: #2ECC71;
+}
+
+.mensaje-oculto {
+  display: none;
+  color: #2ECC71;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat-bot {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.chat-bot img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2ECC71;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.footer-izq {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-der {
+    flex: 1;
+    text-align: right;
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    max-width: 200px;
+    text-align: center;
+    cursor: pointer;
+    padding-right: 20px;
+    transition: #219150;
+}
+.footer-der:hover {
+    background-color: rgb(198, 208, 209);
+}
+@media (max-width: 600px) {
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TagMED</title>
+    <link rel="stylesheet" href="invitado.css">
+    <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <menu>
+            <div class="logo">
+                <img src="imagenes/Logo.png"  alt="Logo TagMED" onclick=location.href='index.html'>
+                <h1>Bienvenido a TagMED</h1>
+                <div class="button-menu">
+                    <button class="registrarse" onclick="location.href='registrado.html'">Registrarse</button>
+                </div>
+            </div>
+    </menu>
+     <section class="contenido">
+    <h4>¿A dónde quieres ir?</h3>
+    <div class="buscador">
+    <input type="text" id="buscar" placeholder="🔍Restaurante, museos, eventos🔎" autocomplete="off" />
+    <button onclick="filtrarContenido()">Buscar</button>
+    </div>
+    <p id="sinResultados" class="mensaje-oculto">No se ha encontrado nada relacionado con tu búsqueda.</p>
+    
+    <!-- SE DEJA ESTO ACÁ PARA USAR COMO EJEMPLO DE FILTRO EN LA BUSQUEDA, NO CAMBIAR EL NOMBRE DE LA CLASE!!! -->
+<!--     <div class="seccion-buscable">
+        <a href="#">Restaurante</a>
+        <a href="#">Museo</a>
+        <a href="#">Evento</a>
+        <a href="#">Hospital</a>
+    </div> -->
+
+
+</section>
+    <footer class="footer">
+        <div class="footer-izq">
+            <h2>TagMED</h2>
+            <h3>Todos los derechos reservados ®</h3>
+        </div>
+        <button class="footer-der" id="administrador">
+        <p>Administración</p>
+        </button>
+    </footer>
+        <script src="invitado.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planes </title>
+    <link rel="stylesheet" href="planes.css">
+    <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="logo">
+        <img src="imagenes/Logo.png"  alt="Logo TagMED" onclick=location.href='index.html'>
+        <h1>Bienvenido a TagMED</h1>
+    </div>
+    </menu>
+     <section class="contenido">
+        <div class="buscador">
+            <input type="text" id="buscar" placeholder="🔍Restaurante, museos, eventos🔎" autocomplete="off" />
+            <button onclick="filtrarContenido()">Buscar</button>
+            
+        </div>
+        <p id="sinResultados" class="mensaje-oculto">No se ha encontrado nada relacionado con tu búsqueda.</p>
+    <div class="seccion-buscable">
+        <br>
+        <a href="#">
+            <div class="eventos">
+            <h2>Eventos</h2>
+            <p>Sumérgete en el mundo del entretenimiento y la cultura con una selección de eventos emocionantes, desde 
+            conciertos y exposiciones hasta ferias y conferencias. Encuentra actividades para todos los gustos y planifica 
+            tu próxima experiencia inolvidable.</p>
+            <img src="imagenes/eventos.jpg" alt="eventoss">
+        </div>
+        </a>
+        <br>
+        <a href="#">
+            <div class="restaurantes">
+            <h2>Restaurantes</h2>
+            <p>Explora una amplia variedad de opciones gastronómicas, desde elegantes restaurantes de alta cocina hasta 
+            acogedores cafés y puestos de comida callejera. Descubre nuevos sabores y disfruta de una experiencia culinaria 
+            única.</p>
+            <img src="imagenes/comida.jpg" alt="comida">
+        </div>
+    </a>
+    <br>
+        <a href="#">
+            <div class="deportes">
+            <h2>Deportes</h2>
+            <p>Mantente activo y apasionado por el mundo deportivo. Aquí encontrarás información sobre partidos, torneos y 
+            actividades deportivas, ya sea que prefieres el fútbol, ​​el baloncesto, el atletismo o cualquier otra disciplina.</p>
+            <img src="imagenes/deportes.jpg" alt="depo">
+        </div>
+        </a>
+        <br>
+        <a href="#">
+            <div class="promociones">
+            <h2>Promociones</h2>
+            <p>Aprovecha las mejores ofertas y descuentos en productos y servicios. Desde rebajas en tiendas hasta promociones 
+            exclusivas en restaurantes y entretenimiento, esta sección te ayuda a ahorrar mientras disfrutas de lo mejor de tu 
+            ciudad.</p>
+            <img src="imagenes/promos.jpg" alt="promos">
+        </div>
+        </a>
+        
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-izq">
+            <h2>TagMED</h2>
+            <h3>Todos los derechos reservados ®</h3>
+        </div>
+        <button class="footer-der" id="administrador">
+        <p>Administración</p>
+        </button>
+    </footer>
+        <script src="invitado.js"></script>
+</body>
+</html>
